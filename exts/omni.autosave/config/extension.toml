@@ -1,0 +1,20 @@
+[package]
+version = "1.0.0"
+title = "AutoSave"
+description = "Automatically saves your stage on every change. Install and forget."
+category = "Utilities"
+authors = ["Ammar Mahmood"]
+repository = "https://github.com/ammarjmahmood/isaacsim_autosave"
+keywords = ["save", "autosave", "utility"]
+
+[package.target]
+kit = ["105.*", "106.*", "107.*", "108.*", "109.*", "110.*"]
+
+[dependencies]
+"omni.usd" = {}
+
+[[python.module]]
+name = "omni.autosave"
+
+[settings.exts."omni.autosave"]
+autoload = true
